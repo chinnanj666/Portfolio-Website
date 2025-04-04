@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Added SEO improvements -->
+    <meta name="description" content="Portfolio of Chinna N J - Web Developer and Designer showcasing skills, projects, and contact information">
+    <meta name="keywords" content="Chinna N J, portfolio, web developer, designer, programmer">
+    <meta name="author" content="Chinna N J">
+    <title>Chinna N J - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Added favicon -->
+    <link rel="icon" type="image/png" href="./assets/Mee.png">
+</head>
+
+<body>
+    <!-- Added navigation toggle for mobile -->
+    <header class="header">
+        <a href="#" class="logo" aria-label="Portfolio Home">Chinna N J</a>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" style="--i:1" class="active">Home</a></li>
+                <li><a href="#about" style="--i:2">About</a></li>
+                <!-- <li><a href="#skills" style="--i:3">Skills</a></li> -->
+                <li><a href="https://chinnanj.netlify.app/" style="--i:4">Portfolio</a></li>
+                <!-- <li><a href="#contact" style="--i:5">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, This is </h3>
+                <h1>Chinna N J</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <!-- Improved description -->
+               <p>Passionate web developer focused on scalable, efficient, high performance web solutions.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/chinnanj666" style="--i:7" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://linkedin.com/in/chinnanj" style="--i:8" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <!-- <a href="https://facebook.com/yourusername" style="--i:9" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="https://youtube.com/yourusername" style="--i:10" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class='bx bxl-youtube'></i>
+                    </a> -->
+                </div>
+                <a href="/assets/ChinnaNJ_CV.pdf" class="btn" download="ChinnaNJ_CV.pdf">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="./assets/Mee.png" alt="Chinna N J - Profile Picture" loading="lazy">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with a deep interest in building backend systems, creating scalable websites, and delivering exceptional user experiences. I am always eager to learn and improve my skills. I love sharing my journey and learning experiences through blogging.</p>
+        </section>
+
+    </main>
+<!-- 
+    Added footer
+    <footer>
+        <p>&copy; 2025 Chinna N J. All rights reserved.</p>
+    </footer> -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="/script.js"></script>
+    <!-- Added inline script for Typed.js initialization -->
+    <script>
+        var typed = new Typed(".multiple-text", {
+            strings: ["Web Developer", "UI/UX Designer", "Frontend Enthusiast"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
