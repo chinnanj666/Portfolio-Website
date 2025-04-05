@@ -5,3 +5,6 @@ let typed = new Typed(".multiple-text", {
     backDelay: 100,
     loop: true,
 })
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('ul').classList.toggle('active');
+});
