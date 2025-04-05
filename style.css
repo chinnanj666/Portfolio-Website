@@ -600,13 +600,3 @@ body::after {
     50% { transform: rotateX(45deg) rotateY(45deg) translateZ(100px) rotate(180deg); }
     100% { transform: rotateX(45deg) rotateY(45deg) translateZ(0) rotate(360deg); }
 }
-p {
-    font-size: 30px; /* Adjust font size as needed */
-    font-weight: bold;
-    background: linear-gradient(to right, #8e2de2, #4a00e0); /* Purple to Blue Gradient */
-    background-clip: text; /* Clip the background to the text */
-    -webkit-background-clip: text; /* Safari support */
-    color: #ff7e5f;  /* Make text color transparent */
-    text-align: center; /* Center-align the text */
-    padding: 20px; /* Optional padding for spacing */
-}
